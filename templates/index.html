@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="/static/images/chatbot_logo.png" alt="Chatbot Logo" class="logo">
+            <h2>Chat with Us!</h2>
+        </div>
+        <div id="chatbox" class="chatbox">
+            <div id="messages" class="messages"></div>
+        </div>
+        <form id="chat-form" autocomplete="off">
+            <input type="text" id="user_input" placeholder="Type a message..." required>
+            <button type="button" id="voice_command" aria-label="Voice command">🎤</button>
+            <input type="file" id="file_input" accept="image/*,application/pdf">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
